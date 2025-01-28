@@ -1,0 +1,41 @@
+"use client";
+
+import React, { useState } from "react";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { cn } from "@/utils/cn";
+import Link from "next/link";
+
+const Navbar = ({ className }: { className?: string }) => {
+	const [active, setActive] = useState<string | null>(null);
+	return (
+		// Container div for the navbar
+		<div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+			{/* Menu component with links */}
+			<Menu setActive={setActive}>
+				<Link href={"/"}>
+				  {/* MenuItem component for the Home link */}
+				  <MenuItem setActive={setActive} active={active} item={"Home"}>
+					  Test
+					</MenuItem>
+				</Link>
+				{/* MenuItem component for the Our Courses link */}
+				<MenuItem setActive={setActive} active={active} item={"Our Courses"}>
+				  <div className="flex flex-col space-y-4 text-sm justify-space-evenly">
+						{/* HoveredLink components for the course links */}
+						<HoveredLink href="courses">All Courses</HoveredLink>
+						<HoveredLink href="courses">Basic Music Theory</HoveredLink>
+						<HoveredLink href="courses">Advanced Composition</HoveredLink>
+						<HoveredLink href="courses">Song Writing</HoveredLink>
+						<HoveredLink href="courses">Music Production</HoveredLink>
+					</div>
+				</MenuItem>
+				<Link href={"/contact"}>
+				  <MenuItem setActive={setActive} active={active} item={"Contact Us"}>
+					</MenuItem>
+				</Link>
+			</Menu>
+		</div>
+	)
+}
+
+export default Navbar
