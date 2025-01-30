@@ -24,11 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased {inter.className}`}>
-				<div className="relative w-full flex itmes-center justify-center">
-					<Navbar />
-				</div>
+    <html lang="en" className="light">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				<Navbar />
         {children}
       </body>
     </html>
