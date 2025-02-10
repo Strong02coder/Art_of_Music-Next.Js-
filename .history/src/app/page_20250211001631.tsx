@@ -1,5 +1,5 @@
 import HeroSection from '@/components/HeroSection';
-import FeaturedCourses from '@/components/FeaturedCourses';
+import FeaturedCourses for
 
 export default function Home() {
   return (
