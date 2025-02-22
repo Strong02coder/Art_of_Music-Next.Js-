@@ -7,7 +7,7 @@ const FeaturedCourses = () => {
       <div>
         <div className="text-center">
           <h2 className='text-base text-teal-900 font-semibold tracking-wide'>FEATURED COURSES</h2>
-          <p className='mt-2 text-3xl leade'>Learn with the Best</p>
+          <p className='mt-2 text-3xl leasd'>Learn with the Best</p>
         </div>
       </div>
       <div></div>

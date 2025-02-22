@@ -6,8 +6,7 @@ const FeaturedCourses = () => {
 		<div className='py-12 bg-gray-900'>
       <div>
         <div className="text-center">
-          <h2 className='text-base text-teal-900 font-semibold tracking-wide'>FEATURED COURSES</h2>
-          <p className='mt-2 text-3xl leade'>Learn with the Best</p>
+          <h2>Featured </h2>
         </div>
       </div>
       <div></div>
